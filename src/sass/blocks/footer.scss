@@ -1,0 +1,11 @@
+.footer {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  max-width: 800px;
+  width: 100%;
+}

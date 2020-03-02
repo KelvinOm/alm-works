@@ -1,0 +1,25 @@
+.btn {
+  color: $colorWhite;
+  height: 50px;
+  min-width: 120px;
+  background: $colorLightBlue;
+  border: none;
+  font-family: $font-family-roboto;
+  font-size: 18px;
+  padding: 6px 12px;
+  border-radius: $controlBorderRadius;
+  cursor: pointer;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background: darken($colorLightBlue, 5%);
+  }
+
+  &:active {
+    background: darken($colorLightBlue, 10%);
+  }
+
+  &:focus {
+    @include focus();
+  }
+}

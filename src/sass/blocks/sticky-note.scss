@@ -1,0 +1,73 @@
+$maxSize: 330px;
+$midSize: 230px;
+$minSize: 130px;
+
+.sticky-note {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: none;
+  font-family: $font-family-caveat;
+  font-size: 24px;
+  max-width: $maxSize;
+  max-height: $maxSize;
+  min-width: $minSize;
+  min-height: $minSize;
+  padding: 15px;
+  resize: both;
+
+  @include shadow();
+
+  &--large {
+    width: $maxSize;
+    height: $maxSize;
+    margin-top: -$maxSize/2;
+    margin-left: -$maxSize/2;
+  }
+
+  &--medium {
+    width: $midSize;
+    height: $midSize;
+    margin-top: -$midSize/2;
+    margin-left: -$midSize/2;
+  }
+
+  &--small {
+    width: $minSize;
+    height: $minSize;
+    margin-top: -$minSize/2;
+    margin-left: -$minSize/2;
+  }
+
+  &--yellow {
+    background-color: $colorYellow;
+  }
+
+  &--orange {
+    background-color: $colorOrange;
+  }
+
+  &--green {
+    background-color: $colorGreen;
+  }
+
+  &--blue {
+    background-color: $colorBlue;
+  }
+
+  &--purple {
+    background-color: $colorPurple;
+  }
+
+  &--gray {
+    background-color: $colorGray;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--draggable {
+    cursor: move;
+  }
+}

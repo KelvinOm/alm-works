@@ -1,0 +1,8 @@
+@mixin focus {
+  outline: none;
+  box-shadow: 0 0 3px 3px $colorFocus;
+}
+
+@mixin shadow {
+  box-shadow: 5px 5px 10px -2px rgba(33, 33, 33, 0.3);
+}

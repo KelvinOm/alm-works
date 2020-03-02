@@ -1,0 +1,23 @@
+@import "variables";
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background: #ffffff;
+  margin: 0;
+  font-family: $font-family-roboto;
+  min-width: 1024px;
+  min-height: 768px;
+  height: 100%;
+}

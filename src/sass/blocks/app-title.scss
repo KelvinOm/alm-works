@@ -1,0 +1,12 @@
+.app-title {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 100px;
+  line-height: 90px;
+  font-family: $font-family-caveat;
+  color: lighten($colorGray, 5%);
+  text-align: center;
+  user-select: none;
+}

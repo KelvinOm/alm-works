@@ -1,0 +1,22 @@
+.trash-zone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: $controlBorderRadius;
+  width: 166px;
+  height: 166px;
+  color: $colorGray;
+  border: 2px dashed $colorGray;
+
+  &--overlapped {
+    color: $colorRed;
+    border-color: $colorRed;
+  }
+}
+
+.trash-zone__icon {
+  width: 100px;
+  height: 100px;
+}
